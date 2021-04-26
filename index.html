@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>DDT4B</h1>
+    <h1>SYAFAA' BINTI AMRAN</h1>
+</head>
+<style>
+    h1 {
+        cursor:grab;
+    }
+</style>
+<body>
+    <h1 onclick="alert('Hello');">Picit ler</h1>
+    <script>
+        function picit() {
+            alert("Your information has been saved");
+        }
+        </script>
+    <input type="text" id="firstName">
+    <input type="text" id="lastName">
+    <button type="button" onclick="papar();">Papar</button>
+    <span id="firstNameOutput"></span>
+    <span id="lastNameOutput"></span>
+    
+    <script>
+    function papar() {
+        let nama1 = document.getElementById('firstName').value;
+        let nama2 = document.getElementById('lastName').value;
+        document.getElementById('firstNameOutput').innerHTML = '<b>Encik</b> ' + nama1;
+        document.getElementById('lastNameOutput').innerHTML = nama2;
+    }
+    </script>
+</body>
+</html>
